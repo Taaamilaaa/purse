@@ -1,0 +1,33 @@
+{
+  "mainInfoCosts": [
+    {
+      "period": "Today",
+      "sum": "0.00",
+      "name": "today"
+    },
+     {
+      "period": "Week",
+      "sum": "0.00",
+      "name": "week"
+    },
+     {
+      "period": "Month",
+      "sum": "0.00",
+      "name": "month"
+    }
+  ],
+  "mainInfoIncomes": [
+        {
+      "period": "Month",
+      "sum": "0.00",
+      "name": "month"
+    }
+  ],
+  "mainInfoBalance": [
+        {
+      "period": "All time",
+      "sum": "0.00",
+      "name": "allTime"
+    }
+  ]
+}
