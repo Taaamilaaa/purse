@@ -9,6 +9,7 @@ function App() {
   const [activePage, setActivePage] = useState("");
   const [costs, setCosts] = useState([]);
   const [incomes, setIncomes] = useState([]);
+  
 
   const addTransaction = (transaction, transType) => {
     if (transType === 'costs') {

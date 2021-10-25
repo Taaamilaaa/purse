@@ -10,6 +10,7 @@ export const BalancePage = ({ closeActivePage, transactions }) => {
       />
           <ul>
               {transactions.map(transaction => {
+                  console.log(transaction);
                   const { date, category, sum } = transaction;
                   return (
                    <li>
