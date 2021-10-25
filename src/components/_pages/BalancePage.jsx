@@ -11,9 +11,9 @@ export const BalancePage = ({ closeActivePage, transactions }) => {
           <ul>
               {transactions.map(transaction => {
                   console.log(transaction);
-                  const { date, category, sum } = transaction;
+                  const { date, category, sum, id} = transaction;
                   return (
-                   <li>
+                   <li key = {id}>
           <span>{date}</span>
           <span>{category}</span>
           <span>{sum}</span>
