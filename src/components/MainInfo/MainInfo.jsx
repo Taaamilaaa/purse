@@ -1,19 +1,20 @@
+import styles from './mainInfo.module.css';
 
 export const MainInfo = ({ title, currency = "USD", options, openActivePage, activePage}) => {
     const handleClick = ()=> openActivePage(activePage)
     return (
-        <section>
-            <h2>{title}</h2>
-            <p>{currency}</p>
-            <ul>
+        <section className = {styles.section}>
+            <h2 className = {styles.title}>{title}</h2>
+            <p className = {styles.currency}>{currency}</p>
+            <ul className = {styles.list}>
                 {options.map(({ period, sum, name }) => 
-                (<li key={name}>
-                    <span>{period}</span>
-                    <span>{sum}</span>
+                (<li className = {styles.listItem} key={name}>
+                    <span className={styles.period}>{period}</span>
+                    <span className = {styles.sum}>{sum}</span>
                  </li> )  
                 )}
             </ul>
-            <button onClick={handleClick} type = "button">Add</button>
+            <button className = {styles.addBtn} onClick={handleClick} type = "button">+</button>
     </section>
 )
 }
